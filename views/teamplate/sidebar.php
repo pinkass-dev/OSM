@@ -46,7 +46,7 @@
                     <ul>
                         <?php foreach($product_hot as $value): ?>
                         <li class="post-164177 products type-products status-publish has-post-thumbnail hentry category-xe-dap-xe-tap-di-xe-day entry">
-                            <a href="chi-tiet-san-pham.php?id=<?php echo $value['id'] ?>" title="<?php echo $value['name'] ?>" class="alignleft"><img width="150" height="150" src="../upload/product/<?php echo $value['thunbar'] ?> " class="attachment-thumbnail" alt="<?php echo $value['name'] ?>" title="<?php echo $value['name'] ?>" /></a>
+                            <a href="chi-tiet-san-pham.php?id=<?php echo $value['id'] ?>" title="<?php echo $value['name'] ?>" class="alignleft"><img width="150" height="150" src="../upload/product/<?php echo $value['avatar'] ?> " class="attachment-thumbnail" alt="<?php echo $value['name'] ?>" title="<?php echo $value['name'] ?>" /></a>
                             <h3 class="widget-item-title"><a href="chi-tiet-san-pham.php?id=<?php echo $value['id'] ?>" title="<?php echo $value['name'] ?>"><?php echo $value['name'] ?></a></h3>
                             <div class="show-gia1"><span class="price"><span> <?php echo ($value['sale'] >0 )? (number_format(($value['price'] *(100 - $value['sale']))/100)): $value['price']  ?> đ</span></span></div>
                             <div class="clear"></div>
@@ -65,7 +65,7 @@
             <div class="main-posts">
                 <?php foreach ($product_hig  as $key => $value): ?>
                 <div class="post-170928 products type-products status-publish has-post-thumbnail hentry category-san-pham-noi-bat category-tham-khan-tam-khan-mat category-san-pham-khuyen-mai entry ">
-                    <a href="chi-tiet-san-pham.php?id=<?php echo $value['id'] ?>" title="<?php echo $value['name'] ?>" class="alignleft"><img width="150" height="150" src="../upload/product/<?php echo $value['thunbar'] ?> " class="attachment-thumbnail" alt="<?php echo $value['name'] ?>" title="<?php echo $value['name'] ?>" /></a>
+                    <a href="chi-tiet-san-pham.php?id=<?php echo $value['id'] ?>" title="<?php echo $value['name'] ?>" class="alignleft"><img width="150" height="150" src="../upload/product/<?php echo $value['avatar'] ?> " class="attachment-thumbnail" alt="<?php echo $value['name'] ?>" title="<?php echo $value['name'] ?>" /></a>
                     <h3 class="widget-item-title"><a href="chi-tiet-san-pham.php?id=<?php echo $value['id'] ?>" title="<?php echo $value['name'] ?>"><?php echo $value['name'] ?></a></h3>
                     <div class="show-gia1">
                         <?php if($value['sale'] == 0): ?>
