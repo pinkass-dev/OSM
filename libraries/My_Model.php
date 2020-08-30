@@ -13,7 +13,7 @@
 
         public function __construct()
         {
-            $this->conn = mysqli_connect("localhost:8889","root","root","db_mobile") or die ();
+            $this->conn = mysqli_connect("localhost:8889","root","root","mobileshopdb") or die ();
             mysqli_set_charset($this->conn,"utf8");
         }
 

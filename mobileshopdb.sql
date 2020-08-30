@@ -42,20 +42,27 @@ CREATE TABLE `db_category` (
 --
 
 INSERT INTO `db_category` (`id`, `parent_id`, `name`, `sort_order`, `status`, `created_at`) VALUES
-(5, 0, 'Ip 6 Qte', 1, 1, '0000-00-00 00:00:00'),
-(6, 0, 'ip XS max', 2, 1, '0000-00-00 00:00:00'),
-(8, 0, 'Ip 7 Qte', 4, 1, '0000-00-00 00:00:00'),
-(9, 0, 'Ip 6 Plus', 5, 1, '0000-00-00 00:00:00'),
+(5, 0, 'Iphone 11 Series', 1, 1, '0000-00-00 00:00:00'),
+(6, 0, 'ip X series', 2, 1, '0000-00-00 00:00:00'),
+(7, 0, 'Ip 8 Series', 3, 1, '0000-00-00 00:00:00'),
+(8, 0, 'Ip 7 Series', 4, 1, '0000-00-00 00:00:00'),
+(9, 0, 'Ip 6 Series', 5, 1, '0000-00-00 00:00:00'),
 (10, 0, 'IPAD', 6, 1, '0000-00-00 00:00:00'),
 (11, 0, 'Apple Watch', 7, 1, '0000-00-00 00:00:00'),
 (12, 0, 'Airpods', 8, 1, '0000-00-00 00:00:00'),
-(15, 5, 'Iphone 11 pro max Lock', 3, 1, '2020-08-27 17:00:00'),
-(16, 6, 'Iphone 11', 1, 1, '2020-08-27 17:00:00'),
+(13, 5, 'Iphone 11', 1, 1, '2020-08-27 17:00:00'),
+(14, 5, 'Iphone 11 Pro', 2, 1, '2020-08-27 17:00:00'),
+(15, 5, 'Iphone 11 pro max', 3, 1, '2020-08-27 17:00:00'),
+(16, 6, 'Iphone x', 1, 1, '2020-08-27 17:00:00'),
 (17, 6, 'Iphone XS', 2, 1, '2020-08-27 17:00:00'),
-(18, 6, 'Iphone XS Max Qte', 3, 1, '2020-08-27 17:00:00'),
+(18, 6, 'Iphone XS Max', 3, 1, '2020-08-27 17:00:00'),
 (19, 6, 'Iphone XR', 4, 1, '2020-08-27 17:00:00'),
+(20, 7, 'Iphone 8', 1, 1, '2020-08-27 17:00:00'),
 (21, 7, 'Iphone 8plus', 2, 1, '2020-08-27 17:00:00'),
-(23, 8, 'Iphone 11 Lock', 3, 1, '2020-08-27 17:00:00');
+(22, 8, 'Iphone 7', 1, 1, '2020-08-27 17:00:00'),
+(23, 8, 'Iphone 7 Plus', 3, 1, '2020-08-27 17:00:00'),
+(24, 9, 'Iphone 6', 1, 1, '2020-08-27 17:00:00'),
+(25, 9, 'Iphone 6 Plus', 2, 1, '2020-08-27 17:00:00');
 
 -- --------------------------------------------------------
 
@@ -234,11 +241,11 @@ CREATE TABLE `db_product` (
 --
 
 INSERT INTO `db_product` (`id`, `name`, `price`, `sale`, `category_id`, `content`, `quantity`, `hot`, `kg`, `buyed`, `avatar`, `images`, `status`, `created_at`) VALUES
-(14, 'Iphone XS Max Quốc tế', 12500000, 10, 18, 'Nổi bật với chip A12 Bionic mạnh mẽ, màn hình rộng đến 6.5 inch, cùng camera kép trí tuệ nhân tạo và Face ID được nâng cấp.', 20, 0, 0, NULL, ' iphonesxmaxquocteden.png', 'iPhone XS Max Quốc tế 64GB.jpg', 1, '2020-08-28 19:44:05'),
-(15, 'Iphone6 Plus', 3600000, 10, 9, 'Được đổi mới mạnh mẽ về thiết kế, cấu hình cùng một màn hình kích thước lớn đi cùng mang đến nhiều thích thú hơn trong sử dụng', 17, 0, 0, NULL, 'iphone6sPlus.png', 'iphone-6s-plus-32gb.jpg', 1, '2020-08-29 00:04:50'),
-(16, 'Iphone 6 Quốc tế', 1900000, 10, 5, '- Iphone 6 quốc tế bản chính hãng apple\r\n- Vân tay đầy đủ, rất nhạy\r\n- Máy hình thức rất đẹp không một lỗi lầm\r\n- Đủ Màu xám/vàng/trắng bạn muốn chọn màu ghi ở lưu ý hoặc inbox cho shop.', 20, 0, 0, NULL, 'iPhone 6S Quốc tế 16GB.jpg', 'iphone_6s.jpg', 1, '2020-08-29 00:04:50'),
-(17, 'Iphone 7 Quốc tế', 3700000, 10, 8, 'Máy có ngoại hình rất mới và trải nghiệm ổn định tại Việt Nam. Sản phẩm được bán ra tại Di Động Việt, bảo hành 6 tháng và hỗ trợ 1 đổi 1 cùng nhiều chính sách mua hàng ưu đãi khác.', 19, 0, 0, NULL, ' iphone_7.jpg', 'iPhone 7 Quốc tế 128GB.jpg', 1, '2020-08-29 09:10:25'),
-(18, 'Iphone8 Plus', 13900000, 15, 21, 'iPhone 8 Plus giữ nguyên hoàn toàn những đường nét thiết kế đã hoàn thiện từ thế hệ trước nhưng sử dụng phong cách 2 mặt kính cường lực kết hợp bộ khung kim loại', 10, 0, 0, NULL, 'iphone_8.jpg', 'iPhone 8 Plus Quốc tế 256GB.jpg', 1, '2020-08-29 09:14:19'),
+(14, 'Iphone XS Max Quốc tế', 12500000, 10, 18, 'Nổi bật với chip A12 Bionic mạnh mẽ, màn hình rộng đến 6.5 inch, cùng camera kép trí tuệ nhân tạo và Face ID được nâng cấp.', 20, 1, 0, NULL, ' iphonesxmaxquocteden.png', 'iPhone XS Max Quốc tế 64GB.jpg', 1, '2020-08-28 19:44:05'),
+(15, 'Iphone6 Plus', 3600000, 10, 9, 'Được đổi mới mạnh mẽ về thiết kế, cấu hình cùng một màn hình kích thước lớn đi cùng mang đến nhiều thích thú hơn trong sử dụng', 17, 1, 0, NULL, 'iphone6sPlus.png', 'iphone-6s-plus-32gb.jpg', 1, '2020-08-29 00:04:50'),
+(16, 'Iphone 6 Quốc tế', 1900000, 10, 5, '- Iphone 6 quốc tế bản chính hãng apple\r\n- Vân tay đầy đủ, rất nhạy\r\n- Máy hình thức rất đẹp không một lỗi lầm\r\n- Đủ Màu xám/vàng/trắng bạn muốn chọn màu ghi ở lưu ý hoặc inbox cho shop.', 20, 1, 0, NULL, 'iPhone 6S Quốc tế 16GB.jpg', 'iphone_6s.jpg', 1, '2020-08-29 00:04:50'),
+(17, 'Iphone 7 Quốc tế', 3700000, 10, 8, 'Máy có ngoại hình rất mới và trải nghiệm ổn định tại Việt Nam. Sản phẩm được bán ra tại Di Động Việt, bảo hành 6 tháng và hỗ trợ 1 đổi 1 cùng nhiều chính sách mua hàng ưu đãi khác.', 19, 1, 0, NULL, ' iphone_7.jpg', 'iPhone 7 Quốc tế 128GB.jpg', 1, '2020-08-29 09:10:25'),
+(18, 'Iphone8 Plus', 13900000, 15, 21, 'iPhone 8 Plus giữ nguyên hoàn toàn những đường nét thiết kế đã hoàn thiện từ thế hệ trước nhưng sử dụng phong cách 2 mặt kính cường lực kết hợp bộ khung kim loại', 10, 1, 0, NULL, 'iphone_8.jpg', 'iPhone 8 Plus Quốc tế 256GB.jpg', 1, '2020-08-29 09:14:19'),
 (19, 'Iphone11 Pro Max Lock', 15900000, 12, 15, 'Chiếc iPhone mạnh mẽ nhất, lớn nhất, thời lượng pin tốt nhất đã xuất hiện. iPhone 11 Pro Max chắc chắn là chiếc điện thoại mà ai cũng ao ước khi sở hữu những tính năng xuất sắc nhất, đặc biệt là camera và pin.\r\n\r\n', 10, 0, 0, NULL, 'iPhone 11 Lock 64GB.png', 'iPhone 11 Pro Max Lock 64GB.png', 1, '2020-08-29 09:17:34'),
 (20, 'Iphone XS Max', 12800000, 10, 6, 'Xs Max sử dụng thép không gỉ và hợp kim được thiết kế tùy chỉnh đặc biệt để tạo ra các dải cấu trúc. Với mặt kính bền, điện thoại thông minh này cũng cung cấp khả năng chống nước và bụi đáng kể. Mặt lưng bằng kính của nó cũng cho phép điện thoại sạc không dây.', 10, 0, 0, NULL, 'iphonesxmaxquocteden.png', ' iphonesxmaxmauvang.webp', 1, '2020-08-29 09:30:10'),
 (21, 'Iphone X', 10590000, 10, 16, 'Có màn hình 5,8inch sắc nét, thiết kế tai thỏ thời thượng, camera kép chất lượng cao và con chip Apple A11 mạnh mẽ, tiết kiệm điện năng. iPhone X  phù hợp với người dùng cần một smartphone thương hiệu lớn, vóc dáng vừa phải, cấu hình hàng đầu và chụp ảnh đẹp', 10, 0, 0, NULL, 'iphoneXden.jpg', 'IphoneXtrang.jpg', 1, '2020-08-29 09:36:57'),

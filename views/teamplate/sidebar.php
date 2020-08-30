@@ -9,20 +9,20 @@
 
         public function showProductHot()
         {
-            return $data = parent::fetchhot('product','buyed');
+            return $data = parent::fetchhot('db_product','buyed');
         }
         // lấy ra sản phẩm nổi bật ở đây  như câu sql a đã viết trong file word
         public function showProductHighlights()
         {
             $where = 'hot = 1 AND  status = 1 ORDER BY created_at DESC';
-            return $data = parent::fetchwhere('product',$where);
+            return $data = parent::fetchwhere('db_product',$where);
         }
 
-        public function showNews()
-        {
-            $where = " status = 1 ORDER BY id DESC LIMIT 0,5 ";
-           return  $data = parent::fetchwhere('news',$where);
-        }
+        // public function showNews()
+        // {
+        //     $where = " status = 1 ORDER BY id DESC LIMIT 0,5 ";
+        //    return  $data = parent::fetchwhere('news',$where);
+        // }
     }
 
     $product = new Sidebar();
@@ -31,7 +31,7 @@
 
     $product_hig = $product -> showProductHighlights();
 
-    $news = $product->showNews();
+    // $news = $product->showNews();
     
 
 ?>

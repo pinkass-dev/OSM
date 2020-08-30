@@ -4,7 +4,7 @@
         <!-- inks CSS --> 
         <link rel='stylesheet' id='caia-css'  href='../public/fontend/css/style.css' type='text/css' media='all' />
         <link rel='stylesheet' id='shop-cart-css'  href='../public/fontend/css/gsc-style.css' type='text/css' media='all' />
-        <link rel='stylesheet' id='footer-css'  href='../public/fontend/css/bootstrap.css' type='text/css' media='all' />
+        <!-- <link rel='stylesheet' id='footer-css'  href='../public/fontend/css/bootstrap.css' type='text/css' media='all' /> -->
         <link rel='stylesheet' id='contact-form-7-css'  href='../public/fontend/css/styles.css' type='text/css' media='all' />
         <link rel='stylesheet' id='responsive-lightbox-fancybox-css'  href='../public/fontend/css/jquery.fancybox-1.3.4.css' type='text/css' media='all' />
         <link rel='stylesheet' id='font-awesome-css'  href='../public/fontend/css/font-awesome.css' type='text/css' media='screen' />
@@ -22,7 +22,7 @@
         <script type='text/javascript' src='../public/fontend/js/connected.js'></script>
         <script type='text/javascript' src='../public/fontend/js/jcarousel.js'></script>
         <script type='text/javascript' src='../public/fontend/js/slick.js'></script>
-        <script type='text/javascript' src='../public/fontend/js/bootstrap.js'></script>
+        <!-- <script type='text/javascript' src='../public/fontend/js/bootstrap.js'></script> -->
         
         <style>.at4-share-title{font-style:italic; font-size:10px; color: #bbb;}.atss{top:60%!important;}@media screen and (max-width:970px) {.atss {top: auto !important; width: 100% !important; bottom: 0 !important;}}</style>
         <style>

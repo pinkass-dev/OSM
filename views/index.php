@@ -18,7 +18,15 @@
             <!-- div content-slider  -->
                 <?php  require_once __DIR__."/teamplate/content-slider.php"; ?>
             <!--  End div content-slider  -->
+            <!--  div inner  -->
+                <div id="inner">
+                    <div id="content-sidebar-wrap">
+                        <?php  require_once __DIR__."/teamplate/inner.php"; ?>
 
+                        <?php  require_once __DIR__."/teamplate/sidebar.php"; ?>
+                   </div>
+                </div>
+            <!--  End div inner  -->
 
             
             <!--  div footer  -->
