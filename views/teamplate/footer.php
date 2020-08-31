@@ -1,4 +1,14 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel='stylesheet' id='footer-css'  href='../public/fontend/css/bootstrap.css' type='text/css' media='all' />
+</head>
+<body>
+    
+ <div class ="container" >  
 <div id="footer" class="footer">
    <div class="menu-foo">
             <div class="row">
@@ -46,6 +56,7 @@
             </div>
         </div>
 </div>
+</div>
 
     <script type="text/javascript" src="../public/fontend/js/addthis_widget.js#pubid=ra-561f22cba0f108c3" async="async"></script>
     <div class="scroll-back-to-top-wrapper">
@@ -55,8 +66,12 @@
     </div>
     <script type='text/javascript' src='../public/fontend/js/jquery.form.min.js'></script>
     <script type='text/javascript' src='../public/fontend/js/scripts.js'></script>
+    <script type='text/javascript' src='../public/fontend/js/bootstrap.js'></script>
     <script type='text/javascript' src='../public/fontend/js/superfish.min.js'></script>
     <script type='text/javascript' src='../public/fontend/js/superfish.args.min.js'></script>
     <script type='text/javascript' src='../public/fontend/js/superfish.compat.min.js'></script>
     <script type='text/javascript' src='../public/fontend/js/jquery3.2.1.js'></script>
    
+
+</body>
+</html>
