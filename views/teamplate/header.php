@@ -12,15 +12,13 @@
                         
                             <select name="price" id="cat" class="postform">
                                 <option value="0" selected="selected">Chọn khoảng giá</option>
-                                <option class="level-1" value="0000000-1000000">0-1.000.000</option>
-                                <option class="level-1" value="1000000-2000000">1.000.000-2.000.000</option>
-                                <option class="level-1" value="2000000-3000000">2.000.000-3.000.000</option>
-                                <option class="level-1" value="3000000-4000000">3.000.000-4.000.000</option>
                                 <option class="level-1" value="4000000-5000000">4.000.000-5.000.000</option>
                                 <option class="level-1" value="5000000-6000000">5.000.000-6.000.000</option>
                                 <option class="level-1" value="7000000-8000000">7.000.000-8.000.000</option>
                                 <option class="level-1" value="8000000-9000000">8.000.000-9.000.000</option>
-                                <option class="level-1" value="9000000-100000000">Trên 9.000.000</option>
+                                <option class="level-1" value="8000000-9000000">10.000.000-15.000.000</option>
+                                <option class="level-1" value="8000000-9000000">15.000.000-20.000.000</option>
+                                <option class="level-1" value="9000000-100000000">Trên 20.000.000</option>
                             </select>
                             <input type="text" value="" name="search" id="s" placeholder="Tìm kiếm"/>		    
                             <input type="submit" id="searchsubmit" value="Search" />
