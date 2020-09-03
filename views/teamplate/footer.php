@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel='stylesheet' id='footer-css'  href='../public/fontend/css/bootstrap.css' type='text/css' media='all' />
+    <!-- <link rel='stylesheet' id='footer-css'  href='../public/fontend/css/bootstrap.css' type='text/css' media='all' /> -->
 </head>
 <body>
     
@@ -66,7 +66,7 @@
     </div>
     <script type='text/javascript' src='../public/fontend/js/jquery.form.min.js'></script>
     <script type='text/javascript' src='../public/fontend/js/scripts.js'></script>
-    <script type='text/javascript' src='../public/fontend/js/bootstrap.js'></script>
+    <!-- <script type='text/javascript' src='../public/fontend/js/bootstrap.js'></script> -->
     <script type='text/javascript' src='../public/fontend/js/superfish.min.js'></script>
     <script type='text/javascript' src='../public/fontend/js/superfish.args.min.js'></script>
     <script type='text/javascript' src='../public/fontend/js/superfish.compat.min.js'></script>

@@ -10,13 +10,13 @@
         function showCate()
         {
 
-          $data = parent::fetchwhere('db_category','parent_id = 0  AND  status = 1 ORDER BY sort_order ASC');
+          $data = parent::fetchwhere('category','parent_id = 0  AND  status = 1 ORDER BY sort_order ASC');
 
           foreach ( $data as $key => $value)
           {
 
             $where = 'parent_id  = '. $value['id'].' AND  status = 1 ORDER BY sort_order ASC ' ;
-            $data[$key]['danhmuc'] = parent::fetchwhere('db_category',$where);
+            $data[$key]['danhmuc'] = parent::fetchwhere('category',$where);
           }
           return $data;
         }

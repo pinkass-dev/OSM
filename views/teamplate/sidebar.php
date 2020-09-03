@@ -9,13 +9,13 @@
 
         public function showProductHot()
         {
-            return $data = parent::fetchhot('db_product','buyed');
+            return $data = parent::fetchhot('product','buyed');
         }
         // lấy ra sản phẩm nổi bật ở đây  như câu sql a đã viết trong file word
         public function showProductHighlights()
         {
             $where = 'hot = 1 AND  status = 1 ORDER BY created_at DESC';
-            return $data = parent::fetchwhere('db_product',$where);
+            return $data = parent::fetchwhere('product',$where);
         }
 
         // public function showNews()

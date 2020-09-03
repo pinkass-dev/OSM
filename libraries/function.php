@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 02-03-2017
- * Time: 00:43 AM
+ 
  */
 	/*
 	 Hàm lấy link giá trị tuyệt đối
@@ -42,8 +39,8 @@
     }// end pre
     /*
     	hàm tạo title 
-    	vd $title ="nguyễn văn dược";
-    	dữ liệu trả về nguyen-van-duoc
+    	vd $title ="lê ngọc xuân";
+    	dữ liệu trả về le ngoc xuan
     */
 
     function safe_title($str = '')

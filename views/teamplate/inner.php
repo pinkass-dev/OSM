@@ -11,7 +11,7 @@
         // Show sản phẩm mới 
         public function showProductNew()
         {
-             return $data = parent::fetchwhere('db_product','  status = 1 ORDER BY buyed  DESC LIMIT 0,8  ');
+             return $data = parent::fetchwhere('product','  status = 1 ORDER BY buyed  DESC LIMIT 0,8  ');
         }
 
         // Show sản phẩm thuộc từng danh mục cụ thể
@@ -19,19 +19,19 @@
         public function showProductCategory()
         {
             // show danh mục cha co parent_id =0
-            $data_category = parent::fetchwhere('db_category','parent_id = 0 AND status = 1 ORDER BY sort_order ASC ');
+            $data_category = parent::fetchwhere('category','parent_id = 0 AND status = 1 ORDER BY sort_order ASC ');
 
             // show danh mục con
             foreach ($data_category as $keys => $category)
             {
                
                 $where = 'parent_id = '.$category["id"];
-                $category_sub = parent::fetchwhere('db_category', $where);
+                $category_sub = parent::fetchwhere('category', $where);
                 
                 if (empty($category_sub)) {
 
                     $where = 'id = '.$category["id"];
-                    $category_subs = parent::fetchwhere('db_category', $where);
+                    $category_subs = parent::fetchwhere('category', $where);
 
                     $data_category[$keys]['sub'] = $category_subs;
                     //pre($data_category[$keys]['sub']);
@@ -40,7 +40,7 @@
 
                         $where = 'category_id = '.$value['id'].' LIMIT 0 ,16';
                         // show sản phẩm thuộc danh mục 
-                        $product = parent::fetchwhere('db_product',$where);
+                        $product = parent::fetchwhere('product',$where);
                     
                         $data_category[$keys]['sub'][$key]['subpro'] = $product;
                     }
@@ -53,7 +53,7 @@
                     {
                         $where = 'category_id = '.$value['id'].' LIMIT 0 ,16';
                         // show sản phẩm thuộc danh mục 
-                        $product = parent::fetchwhere('db_product',$where);
+                        $product = parent::fetchwhere('product',$where);
 
                         $data_category[$keys]['sub'][$key]['subpro'] = $product;
                     }
@@ -69,7 +69,7 @@
         public function showProductSale()
         {
             $where = '1 ORDER BY sale DESC LIMIT 0,4 ';
-            return $data = parent::fetchwhere('db_product',$where);
+            return $data = parent::fetchwhere('product',$where);
         }
 
         // public function showProductEnd()
