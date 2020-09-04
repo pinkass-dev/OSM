@@ -35,7 +35,7 @@
                             <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="../admin/" target="_blank" style="">Trang quản trị</a></li>
                             <?php endif; ?>
                             <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16">
-                                <a href="thoat.php">Thoát</a>
+                                <a href="dang-xuat.php">Thoát</a>
                             </li>
                         
                         <?php endif; ?>
