@@ -24,7 +24,7 @@ session_start();
 
             } else if(empty($data['price']) && !empty($data['search'])) {
 
-                $where = $where . "name LIKE '%$key%' OR supplier LIKE '%$key%' ";
+                $where = $where . "name LIKE '%$key%'";
 
             } else if(!empty($data['price']) && !empty($data['search'])) {
 

@@ -228,7 +228,7 @@ CREATE TABLE `db_user` (
 --
 
 INSERT INTO `db_user` (`id`, `name`, `password`, `role_id`, `email`, `phone`, `address`, `created_at`, `update_at`) VALUES
-(1, 'ADMIN', '7c4a8d09ca3762af61e59520943dc26494f8941b', '1', 'admin@gmail.com', '0167892615', 'hn', '2019-04-23 09:16:16', '2020-09-04 05:25:46'),
+(1, 'ADMIN', '123456', '1', 'admin@gmail.com', '0167892615', 'hn', '2019-04-23 09:16:16', '2020-09-04 05:25:46'),
 (2, 'Lê Ngọc Xuân', 'e10adc3949ba59abbe56e057f20f883e', '3', 'lexuan281294@gmail.com', '0987541656', 'tổ dân phố Đôn Hậu, phường Khai Quang,tp Vĩnh Yên, tỉnh Vĩnh Phúc', '2020-09-04 12:36:19', '2020-09-04 05:36:19');
 
 -- --------------------------------------------------------
